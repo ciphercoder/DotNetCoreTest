@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form id="form1" method="post">
+    <div class="text-center">
+
+        <input type="file" id="file1" name="file" />
+
+    </div>
+</form>
+<script>
+    document.getElementById('file1').onchange = function () {
+        document.getElementById('form1').submit();
+    };
+
+</script>
